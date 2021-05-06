@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dz 8</title>
+</head>
+<body>
+<script>
+    //1
+    let a = +prompt('Enter a number');
+    if (a > 0 && a !== 0) {
+        alert(`${a} is a positive number`)
+    } else if (a === 0) {
+        alert(`your number equals zero`)
+    } else {
+        alert(`${a} is a negative number`)
+    }
+</script>
+
+<script>
+    //2
+    let age = +prompt('Enter your age');
+    if (isNaN(age)){
+        alert( `Not a number`)
+    }
+    else if(age >0 && age <=120){
+        alert(`age that you entered is correct`)
+    }else if (age <= 0 || age > 120) {
+        alert(`age that you entered is incorrect`)
+    }
+</script>
+
+<script>
+    //3
+    let num1 = +prompt('enter a number'), num2 = num1 * -1;
+    if (num1 >= 0) {
+        alert(`модулем числа ${num1} является |${num1}| `);
+    } else {
+        alert(`модулем числа ${num1} является |${num2}| `);
+     }
+</script>
+
+<script>
+    //4
+    let hour = +prompt('enter hour') , min = +prompt('enter minute') , sec = +prompt('enter second');
+    if ( hour <=0 || hour >=24 || min <0 || min >=60 || sec <0 || sec >= 60 ){
+        alert('enter correct time your time is incorrect');
+    } else{
+      alert(`your time is ${hour} hour ${min}minutes  ${sec} seconds`);
+    }
+</script>
+
+<script>
+    //5
+    let x = +prompt('Ведите координату x'), y = +prompt('Ведите координату y');
+    if (x > 0 && y > 0) {
+        alert(` In the first quarter`);
+    } else if (x < 0 && y > 0) {
+        alert(`In the second quarter`);
+    } else if (x < 0 && y < 0) {
+        alert(`In third third quarter`);
+    } else if (x > 0 && y < 0) {
+        alert(`In the fourth quarter`);
+    } else if (x === 0 && y === 0) {
+        alert(`Point of origin`);
+    } else if (x !== 0 && y === 0) {
+        alert(`On X-axis`);
+    } else if (x === 0 && y !== 0) {
+        alert(`On Y-axis`);
+    }
+</script>
+
+</body>
+</html>
